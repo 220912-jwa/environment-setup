@@ -226,7 +226,7 @@ You should see your operating system listed ("Windows 10" in the above example) 
 ![](./images/JDK-Email.jpg)
 ![](./images/JDK-Success.jpg)
 
-5. Return to [Oracle's JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html?) website. Scroll to find the appropriate JDK for your Operating System and Architecture. (Windows 10 will be Windows x64 as shown below) and click to download. 
+5. Return to [Oracle's JDK 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) website. Scroll to find the appropriate JDK for your Operating System and Architecture. (Windows 10 will be Windows x64 as shown below) and click to download. 
 
 ![](./images/JDK-Download.jpg)
 
