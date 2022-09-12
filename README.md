@@ -12,11 +12,10 @@
 The following technologies are required in order to complete this phase of the program:
 
 - **Git**: We'll be using Git as a version control tool during the course of this program. Not only will you use Git to track changes to your projects, but you'll also use it to collaborate with your trainer and with your fellow associates.
-- **Java SE Development Kit 8**: We will be utilizing Java 8 as our primary language for the duration of the program. This software development kit will provide the compiler and runtime environment needed to quickly and efficiently develop Java applications.
+- **Java SE Development Kit 11**: We will be utilizing Java 11 as our primary language for the duration of the program. This software development kit will provide the compiler and runtime environment needed to quickly and efficiently develop Java applications.
 - **IntelliJ IDEA Community Edition**: We will be using IntelliJ as our *integrated development environment* (IDE). Though you don't need an IDE to write code, an IDE provides several features that make rapid development (e.g. quickly writing and refactoring code) easier. IntelliJ is an IDE managed by a company called JetBrains. If you've worked in Python before, you may know them, as they also have an IDE called PyCharm.  
 - **Apache Maven**: Maven is a software project management and build automation tool. We will use it to manage our projects' builds as it provides dependency management and streamlines several aspects of the testing life cycle.
 - **DBeaver**: DBeaver is a free, open source universal database tool that is compatible with several external data sources. We'll use DBeaver in order to modify our databases (which will be hosted on AWS) and persist data using a simple user interface provided to us by the tool.
-- **Apache Tomcat 9**: During this program, we will explore web development. As a result, we'll need a runtime environment for our web applications. Apache Tomcat provides a web server environment in which we can run our Java code so that we can easily and quickly deploy our web applications.
 - **Visual Studio Code**: Visual Studio Code is a text editor that makes viewing and modifying code simple. Do not confuse this tool with an integrated development environment as it does not come equipped with all of the development tools you typically find in an IDE. We will be leveraging this tool for much of our front-end development. 
 - **Postman**: Postman is used for testing RESTful APIs. We'll use it to set up collections of tests for the RESTful APIs we design throughout the program. It can also be used to quickly test a single endpoint.
 
@@ -80,7 +79,7 @@ Open a new terminal and run the following commands (one by one):
 
 Now that you've installed Scoop and added some additional buckets for downloading software, open a new terminal and run the following command in order to install Java:
 
-    scoop install ojdkbuild8-full
+    scoop install openjdk11
 
 Now verify that you have installed Java properly by typing this command:
 
@@ -108,23 +107,7 @@ In order to install DBeaver, run the following command in your terminal:
 
 You can verify that you have installed DBeaver properly by searching for "DBeaver" in your Windows search bar.
 
-### Step 7: Install Apache Tomcat
-
-In order to install Tomcat, run the following command in your terminal:
-
-    scoop install tomcat
-
-Verify that you have installed Tomcat properly by running the following command if you are using powershell as your terminal:
-
-    echo $env:CATALINA_HOME
-    
-If you are using a different terminal and the above doesn't work try:
-    
-    echo %CATALINA_HOME%
-
-If the installation was successful, the directory to which you installed Tomcat should appear in the terminal.
-
-### Step 8: Install Postman
+### Step 7: Install Postman
 
 In order to install Postman, run the following command in your terminal:
 
@@ -132,7 +115,7 @@ In order to install Postman, run the following command in your terminal:
 
 Verify that the program was installed properly by searching for "Postman" in your windows search bar.
 
-### Step 9: Install Visual Studio Code
+### Step 8: Install Visual Studio Code
 
 In order to install Visual Studio Code, run the following command in your terminal:
 
@@ -140,7 +123,7 @@ In order to install Visual Studio Code, run the following command in your termin
 
 If the installation was successful, you should be able to search for "Visual Studio Code" in the Windows search bar.
 
-### Step 10: Install Git
+### Step 9: Install Git
 While scoop can install Git we HIGHLY recommend a manual install as it allows you to also install some ease-of-life optional features. 
 
 You can find the manual install instructions in the next section: Step 1.
@@ -227,7 +210,7 @@ You should see your operating system listed ("Windows 10" in the above example) 
 
 ### Step 2: Install Java
 
-1. Navigate in your web browser to [Oracle's JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html?) website. NOTE: If you are experiencing errors when trying to load the webpage try another browser. If you still are having trouble, try again later. 
+1. Navigate in your web browser to [Oracle's JDK 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) website. NOTE: If you are experiencing errors when trying to load the webpage try another browser. If you still are having trouble, try again later. 
 
 2. In the top right of the website click "View Accounts" and then "Create an Account." (If you already have an Oracle account you can just skip to step 5)
 
@@ -319,7 +302,7 @@ You should see your operating system listed ("Windows 10" in the above example) 
 
 ### Step 3: Install IntelliJ IDEA
 
-1. Navigate to the [JetBrains Installation Guide](https://www.jetbrains.com/help/idea/installation-guide.html) page and install IntelliJ using the Toolbox App. The latest stable release is fine for our purposes (2021.2) The community edition is free, you do not need Ultimate! Follow the installation wizard's steps. 
+1. Navigate to the [JetBrains Installation Guide](https://www.jetbrains.com/help/idea/installation-guide.html) page and install IntelliJ **Community Edition** using the Toolbox App. The latest stable release is fine for our purposes (2022.2) The community edition is free, you do not need Ultimate! Follow the installation wizard's steps. 
 
 ![](./images/intellij-start.png)
 
@@ -401,7 +384,7 @@ Once you navigate to the website, you should see the following:
 
 You'll notice that there are two options: Community Edition and Enterprise Edition. Please select the **Community Edition** as it is free. Do NOT select the Enterprise as it is not free.
 
-You will find the installers for the Community Edition if you scroll down the page. They should be located directly beneath the the box which says "Community Edition 7.1.1". As with all other software listed here, please make sure that you choose the correct installer for your system.
+You will find the installers for the Community Edition if you scroll down the page. They should be located directly beneath the the box which says "Community Edition 22.2.0". As with all other software listed here, please make sure that you choose the correct installer for your system.
 
 Once you've clicked on the installer that is compatible with your system, you'll be prompted to save the file. Save it and note where you've saved it on your machine. These files are usually stored in your computer's "Downloads" folder by default.
 
@@ -421,77 +404,8 @@ When you arrive at the portion of the setup which is titled "Choose Components",
 
 If your installation was successful, you should now be able to search for and find "DBeaver" using your computer's search bar.
 
-### Step 6: Install Apache Tomcat
 
-In order to download Tomcat, please visit [Apache Tomcat's official website](http://tomcat.apache.org/).
-
-Once you've navigated to the site, you should see the following screen:
-
-![Tomcat Home](./images/tomcat-home.PNG)
-
-Scroll down until you see the section labeled "Tomcat 9.x.xx" as shown below. Click the appropriate link under the "Core" section of "Binary Distributions" that matches your machine. (Generally 64-bit Windows zip.)
-
-![Tomcat 9](./images/tomcat-9.PNG)
-
-**Note**: Some of this tutorial will use images from a tomcat 8 installation even though we are using tomcat 9. The steps should be the same just be aware your version number will differ from those in some of the images. 
-
-Now go into your system's "Downloads" folder. You should see a folder that is labeled "apache-tomcat-9.x.xx".
-
-![Tomcat Zip](./images/tomcat-zip.PNG)
-
-Right click the folder. Once you do so, you should see a list of options. Choose the option that reads "Extract All...". You'll then be asked to select a destination for the extracted files. You may choose any location on your computer you wish to by hitting the "Browse" button, but for this tutorial, we will be choosing to place the extracted files in the "Program Files" folder.
-
-**Note**: Please keep note of where you choose to place the extracted files as you'll need this information in the next step.
-
-![Program Files](./images/program-files.PNG)
-
-Once you've selected a destination, hit the "Extract" button at the bottom of the box.
-
-After you've done so, wait for the files to be extracted. Then go the location where you specified the extracted files should be placed. In our case, we are navigating to the "Program Files" directory.
-
-![Program Files Directory](./images/program-files-directory.PNG)
-
-There you should see the files you just extracted in a folder called "apache-tomcat-8.x.xx". Go inside of this folder by double clicking it. Once inside, copy the path to it by clicking on the bar that shows your file path near the top of the box. It should be directly to the left of the search bar. In this example, the bar contains the text:
-
-    Local Disk (C:) > Program Files > apache-tomcat-8.5.56
-
-![Inside of Tomcat Folder](./images/inside-tomcat.PNG)
-
-Once you've clicked on the bar, copy the address. In this example, the address is:
-
-    C:\Program Files\apache-tomcat-8.5.56
-
-**Note**: This next portion will only work if you are running Windows as the process for setting environment variables is different on different systems.
-
-Now go into your search bar and type "Edit the System Environment Variables".
-
-![Edit System Environment Variables](./images/JDK-SysEnv.jpg)
-
-Then click on the "Environment Variables" button at the bottom of the box that appears.
-
-![Edit Environment Variables](./images/JDK-SysProp.jpg)
-
-A new box should pop up. At this point, you should click the "New" button at the  bottom of the box.
-
-![New System Variable](./images/JDK-EnvVar.jpg)
-
-Yet another box will then pop up. It will prompt you for a "Variable name" and "Variable value". Enter the following into these boxes:
-
-![Catalina Home](./images/catalina_home.PNG)
-
-The variable name MUST be exactly what is typed above. The variable value should equivalent to the path to your Tomcat folder you copied during the last step.
-
-Once you've entered this information, hit "OK". You should then hit "OK" again on the remaining two boxes.
-
-**Note**: If you do not hit OK on all three of the boxes, your environment variable will not be properly set!
-
-In order to verify that your environment variable was properly set, please open your terminal (e.g. type "Command Prompt" into the Windows search bar) and type the following:
-
-![Echo Catalina Home](./images/echo.PNG)
-
-At this point, the value of the CATALINA_HOME environment variable should be displayed.
-
-### Step 7: Install Postman
+### Step 6: Install Postman
 
 In order to download Postman, please visit [Postman's official website](https://www.postman.com/downloads/).
 
@@ -539,6 +453,6 @@ Additional Resources
 ====================
 
 *  **Git Cheat Sheet** (This is a GitHub-provided cheat sheet for some simple Git commands.): https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
-*  **Java Docs** (The official API specification for Java 8): https://docs.oracle.com/javase/8/docs/api/
+*  **Java Docs** (The official API specification for Java 11): https://docs.oracle.com/javase/11/docs/api/
 *  **Maven Repository** (This provides a repository of dependencies which we can add to our Project Object Models.): https://mvnrepository.com/
 
